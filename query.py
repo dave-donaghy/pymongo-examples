@@ -5,7 +5,7 @@ import json
 from pymongo import MongoClient
 import sys
 
-parser = argparse.ArgumentParser(description='List onjects in a named Mongo database and collection.')
+parser = argparse.ArgumentParser(description='Query a named Mongo database and collection.')
 parser.add_argument('-s', '--server', nargs=1, help='Mongo server URL')
 parser.add_argument('database', nargs=1, help='database name')
 parser.add_argument('collection', nargs=1, help='collection name')

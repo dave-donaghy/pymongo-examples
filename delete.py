@@ -4,7 +4,7 @@ import argparse
 import json
 from pymongo import MongoClient
 
-parser = argparse.ArgumentParser(description='Insert JSON object from file into a named Mongo database and collection.')
+parser = argparse.ArgumentParser(description='Delete some objects from a named Mongo database and collection.')
 parser.add_argument('-s', '--server', nargs=1, help='Mongo server URL')
 parser.add_argument('database', nargs=1, help='database name')
 parser.add_argument('collection', nargs=1, help='collection name')

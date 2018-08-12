@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
-import json
 from pymongo import MongoClient
-import sys
 
 parser = argparse.ArgumentParser(description='Query a named Mongo database and collection.')
 parser.add_argument('-s', '--server', nargs=1, help='Mongo server URL')

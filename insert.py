@@ -3,7 +3,6 @@
 import argparse
 import json
 from pymongo import MongoClient
-import sys
 
 parser = argparse.ArgumentParser(description='Insert JSON object from file into a named Mongo database and collection.')
 parser.add_argument('-s', '--server', nargs=1, help='Mongo server URL')

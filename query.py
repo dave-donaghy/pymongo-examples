@@ -20,6 +20,5 @@ else:
 database = client[args.database[0]]
 
 collection = database[args.collection[0]]
-# for item in collection.find({"name": "Dave Donaghy", "qty": {"$lt": 30}}):
 for item in collection.find({"name": "Tom Smith", "telephone": { "$regex": "44"}}):
     print(item)
